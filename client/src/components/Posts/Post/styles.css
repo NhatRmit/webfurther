@@ -1,0 +1,29 @@
+#carImg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 12rem;
+}
+
+#btnGetOffer{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #FFF963;
+}
+
+#carInfo {
+    font-size: 0.95rem;
+}
+
+span {
+    font-size: 0.85rem;
+}
+
+#edit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+}
+
