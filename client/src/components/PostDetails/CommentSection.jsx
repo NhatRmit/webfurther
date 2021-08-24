@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 
 import { commentPost } from '../../actions/posts';
 import useStyles from './styles';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles.css'
 
 const CommentSection = ({ post }) => {

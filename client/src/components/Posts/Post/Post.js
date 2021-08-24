@@ -8,7 +8,6 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { likePost, deletePost } from '../../../actions/posts';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles.css'
 
 const Post = ({ post, setCurrentId }) => {
@@ -59,7 +58,6 @@ const Post = ({ post, setCurrentId }) => {
             onClick={(e) => {
               e.stopPropagation();
               setCurrentId(post._id);
-              console.log(post)
             }}
             style={{ color: 'white' }}
             size="small"
@@ -86,7 +84,7 @@ const Post = ({ post, setCurrentId }) => {
             <strong>{post.price}</strong>
           </p>
           <p className="col-6"></p>
-          {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
+          {(user?.result?.googleId === post?.author || user?.result?.name === post?.author) && (
             <Button size="small" color="secondary" onClick={() => dispatch(deletePost(post._id))}>
               <DeleteIcon fontSize="small" /> &nbsp; Delete
             </Button>

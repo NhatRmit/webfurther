@@ -50,7 +50,7 @@ const Form = ({ currentId, setCurrentId }) => {
   };
 
   useEffect(() => {
-    if (!post?.title) clear();
+    if (!post?.model) clear();
     if (post) setPostData(post);
   }, [post]);
 
@@ -78,7 +78,7 @@ const Form = ({ currentId, setCurrentId }) => {
   return (
     <Paper className={classes.paper}>
     <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
-      <Typography variant="h6">{currentId ? `Editing "${post.title}"` : 'Add New Car Offer'}</Typography>
+      <Typography variant="h6">{currentId ? `Editing "${post.model}"` : 'Add New Car Offer'}</Typography>
       <TextField 
       name="brand" 
       variant="outlined" 
